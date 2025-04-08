@@ -11,7 +11,7 @@ export class UsersController {
 
     }
 
-    @Get(":age?")
+    @Get(":age")
     getUsers(@Param() param: GetUserParamDto  )
     {
         return this.usersService.getAllUsers();
